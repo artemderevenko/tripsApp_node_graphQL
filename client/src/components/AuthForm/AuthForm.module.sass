@@ -1,0 +1,46 @@
+@import '../../variables'
+  
+.page-wrap
+  width: 100%
+  height: 100vh
+  background-color: $content-bgd
+  @include flex-start-center
+
+.auth-form
+  width: 450px
+  height: auto
+  padding: 30px
+  background-color: $content-bgd
+  box-shadow: $layout-bgd-shadow
+  border: 1px solid $layout-border-color
+  border-radius: 4px
+  margin-top: 150px
+  @include flex-center
+
+.title
+  width: 100%
+  margin-bottom: 30px
+  @include flex-center
+  @include montserrat-normal(20px, 26px, $primary-text-color-dark)
+
+.input-row
+  width: 100%
+  margin-bottom: 15px
+
+.button-row
+  width: 100%
+  margin-top: 15px
+  @include flex-center
+
+.redirect-box
+  width: 100%
+  margin-top: 40px
+  @include flex-center
+  @include montserrat-normal(14px, 18px, $primary-text-color-dark)
+
+  a
+    margin: 0 5px
+    @include montserrat-normal(14px, 18px, $primary-color)
+
+    &:hover
+      text-decoration: none

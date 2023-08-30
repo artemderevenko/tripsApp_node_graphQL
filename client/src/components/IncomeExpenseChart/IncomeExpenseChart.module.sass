@@ -1,0 +1,89 @@
+@import '../../variables'
+  
+.icome-expense-chart
+  width: 1060px
+  height: auto
+  @include flex-start
+
+.scale
+  width: 60px
+  height: 360px
+  position: relative
+
+.expenses-point-wrap,
+.income-point-wrap 
+  position: absolute
+  transform: translateY(6px)
+  right: 10px
+
+.zero-point-wrap
+  position: absolute
+  transform: translateY(6px)
+  bottom: 0
+  right: 10px
+
+.income-point-label,
+.expenses-point-label,
+.zero-point-label
+  @include montserrat-normal(13px, 15px, $primary-text-color-dark)
+
+.income-point-label 
+  color: $primary-color
+
+.expenses-point-label
+  color: $error-color
+
+.income-point,
+.expenses-point
+  width: 5px
+  height: 5px
+  border-radius: 50%
+  position: absolute
+  transform: translateY(-9px)
+  right: -13px
+
+.income-point 
+  background-color: $primary-color
+
+.expenses-point
+  background-color: $error-color
+
+.chart-wrap
+  width: 1000px
+  height: 360px
+  border-left: 1px solid $primary-border-color
+  border-bottom: 1px solid $primary-border-color
+
+.chart-legends
+  width: auto
+  width: 100%
+  margin-top: 30px
+  padding-left: 60px
+  @include flex-start
+
+.legend-item
+  width: 100%
+  margin-bottom: 15px
+  @include flex-start
+  
+  &:last-child
+    margin-bottom: 0
+
+.legend-item-expenses,
+.legend-item-income
+  width: 40px
+  height: 2px
+  margin: 8px 15px 0 0
+
+.legend-item-expenses 
+  height: 1px
+
+.legend-item-expenses
+  background-color: $error-color
+
+.legend-item-income
+  background-color: $primary-color
+
+.legend-item-label
+  width: calc(100% - 55px)
+  @include montserrat-normal(13px, 19px, $primary-text-color-dark)

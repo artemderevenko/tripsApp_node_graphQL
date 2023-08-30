@@ -1,0 +1,31 @@
+@import '../../variables'
+  
+.seat-layout-button
+  position: absolute
+  width: 100%
+  height: 100%
+  border: 1px solid $button-seat-border-color
+  border-radius: 4px 15px 15px 4px
+  background-color: $content-bgd
+  transition: background-color .3s ease, border-color .3s ease
+  cursor: pointer
+
+  &:hover
+    background-color: $button-seat-bgd
+
+.reserved 
+  background-color: $button-seat-reserved-bgd
+  border-color: $button-seat-reserved-bgd
+
+  &:hover
+    background-color: $button-seat-reserved-bgd-hover
+    border-color: $button-seat-reserved-bgd-hover
+
+.label
+  width: 100%
+  height: 100%
+  @include flex-center
+  @include montserrat-normal(18px, 22px, $primary-text-color-dark)
+
+.seat-layout-dropdown
+  max-height: 240px

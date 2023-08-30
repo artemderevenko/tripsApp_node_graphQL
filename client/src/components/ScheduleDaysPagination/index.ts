@@ -1,0 +1,1 @@
+export { ScheduleDaysPagination } from './ScheduleDaysPagination';

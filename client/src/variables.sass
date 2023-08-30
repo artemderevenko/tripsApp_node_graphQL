@@ -1,0 +1,150 @@
+$primary-color: #3e8aaf
+$active-menu-bgd: #6badcd
+$body-bgd: #ffffff
+$content-bgd: #ffffff
+$primary-text-color-dark: #585858
+$primary-text-color-light: #ffffff
+$primary-border-color: #d3d8df
+$primary-box-shadow: 0 5px 12px 3px rgba(0,0,0,0.1)
+$select-bgd-hover: #f0f3f7
+$text-disable-color: #adabab
+$layout-bgd-shadow: 0 0 15px rgba(0, 0, 0, .1)
+$layout-border-color: rgba(0, 0, 0, .1)
+$tour-schedule-bgd: #9883b5
+$tour-schedule-bgd-hover: #7e6d95
+$holiday-color: #ec110a
+$neutral-bgd: #d8d8d8
+$error-color: #ED6F67
+$warning-color: #F8B952
+$success-color: #43C175
+$button-delete-bgd: #ED6F67
+$button-delete-bgd-hover: #c5524a
+$button-cancel-border: #8999a7
+$button-cancel-border-hover: #687989
+$table-row-hover: #f3f3f3
+$table-header-color: #8999a7
+$button-seat-bgd: #def5df
+$button-seat-border-color: #b6dfb7
+$button-seat-reserved-bgd: #dddddd
+$button-seat-reserved-bgd-hover: #cbcbcb
+
+@mixin montserrat-normal($font-size, $line-height, $color)
+  font-family: 'Montserrat', sans-serif
+  font-size: $font-size
+  line-height: $line-height
+  color: $color
+  font-weight: 400
+
+@mixin montserrat-bold($font-size, $line-height, $color)
+  font-family: 'Montserrat', sans-serif
+  font-size: $font-size
+  line-height: $line-height
+  color: $color
+  font-weight: 600
+
+@mixin flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+@mixin flex-start-center
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+
+@mixin flex-start
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  flex-wrap: wrap
+
+@mixin flex-center-start
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-wrap: wrap
+
+@mixin flex-center-end
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+
+@mixin flex-center-between
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+@mixin flex-start-between
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+@mixin ellipsis-text
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+@mixin scrollLeft($duration: .2s)
+  animation: scrollLeft $duration 1 ease-in-out
+
+  @keyframes scrollLeft
+    0%
+      transform: translateX(0)
+      opacity: 1
+
+    100%
+      transform: translateX(-15%)
+      opacity: 0
+
+@mixin scrollRight($duration: .2s)
+  animation: scrollRight $duration 1 ease-in-out
+
+  @keyframes scrollRight
+    0%
+      transform: translateX(0)
+      opacity: 1
+
+    100%
+      transform: translateX(15%)
+      opacity: 0
+
+@mixin fade($duration: .3s)
+  animation: fade $duration 1 linear
+
+  @keyframes fade
+    0%
+      opacity: 0
+
+    100%
+      opacity: 1
+
+@mixin blink-fade($duration: 4s)
+  animation: fade $duration 1 linear
+
+  @keyframes fade
+    0%
+      opacity: 0
+
+    10%
+      opacity: 1
+
+    90%
+      opacity: 1
+
+    100%
+      opacity: 0
+
+@mixin rotate($duration: 1s)
+  animation: rotate $duration infinite linear
+
+  @keyframes rotate
+    from
+      transform: rotate(0deg)
+
+    to
+      transform: rotate(360deg)

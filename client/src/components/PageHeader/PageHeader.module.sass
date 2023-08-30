@@ -1,0 +1,29 @@
+@import '../../variables'
+
+.page-header
+  display: flex
+  align-items: center
+  width: 100%
+  padding-bottom: 20px
+  user-select: none
+
+.right
+  justify-content: flex-end
+
+.left
+  justify-content: flex-start
+
+.center
+  justify-content: center
+
+.between
+  justify-content: space-between
+
+.title 
+  width: auto
+  max-width: calc(100% - 340px)
+  @include montserrat-normal(20px, 24px, $active-menu-bgd)
+  @include ellipsis-text
+
+.fade
+  @include fade()

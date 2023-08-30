@@ -1,0 +1,41 @@
+@import '../../variables'
+
+.row 
+  width: 100%
+  min-height: 36px
+  margin-bottom: 20px
+  @include flex-center-between
+
+  &:last-child
+    margin-bottom: 0  
+  
+.type,
+.description,
+.amount
+  width: calc(33% - 20px)
+
+.amount
+  @include flex-center-between  
+
+.amount-input
+  width: calc(100% - 44px)
+  
+.delete-row
+  width: 24px
+  height: 24px 
+  cursor: pointer
+  margin-top: 8px
+  @include flex-center-end
+
+  svg 
+    width: 18px
+    height: auto
+
+    path 
+      fill: $button-delete-bgd
+      transition: fill .3s ease
+
+  &:hover
+    svg 
+      path 
+        fill: $button-delete-bgd-hover

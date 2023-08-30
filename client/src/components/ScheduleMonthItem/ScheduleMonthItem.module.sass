@@ -1,0 +1,48 @@
+@import '../../variables'
+  
+.schedule-month-item
+  width: 238px
+  margin-bottom: 20px
+  height: 250px
+
+  &:nth-child(9),
+  &:nth-child(10),
+  &:nth-child(11),
+  &:nth-child(12)
+    margin-bottom: 0
+
+.month-name
+  width: 100%
+  margin-bottom: 10px
+  @include flex-start-center
+  @include montserrat-normal(16px, 18px, $primary-text-color-dark)
+
+.month-days-list
+  width: 100%
+  @include flex-start
+
+.month-days-item
+  width: calc(100% / 7)
+  height: 34px
+  @include flex-start-center
+
+.date-button
+  width: 34px
+  height: 34px
+  border-radius: 50%
+  cursor: pointer
+  background-color: $content-bgd
+  transition: background-color .3s ease
+  text-decoration: none
+  @include montserrat-normal(11px, 13px, $primary-text-color-dark)
+  @include flex-center
+
+  &:hover
+    background-color: $select-bgd-hover
+
+.date-button-today
+  background-color: $active-menu-bgd
+  @include montserrat-normal(11px, 13px, $primary-text-color-light)
+
+  &:hover
+    background-color: $primary-color

@@ -1,0 +1,68 @@
+@import '../../variables'
+
+.table-header
+  width: 100%
+  height: 36px
+  background-color: $table-header-color
+  border-radius: 4px 4px 0 0
+  @include flex-start-between
+
+  & > div
+    height: 100%
+    padding: 0 10px
+    @include flex-center-start
+    @include montserrat-normal(14px, 18px, $primary-text-color-light)
+
+.clients-first-name,
+.managers-first-name,
+.tourist-first-name
+  width: 20%
+
+.clients-last-name,
+.managers-last-name,
+.tourist-last-name
+  width: 20%
+
+.clients-middle-name,
+.managers-middle-name,
+.tourist-middle-name
+  width: 20%
+
+.clients-birth,
+.managers-birth,
+.tourist-payment-amount
+  width: 15%
+
+.clients-sex,
+.managers-sex,
+.tourist-seat-number
+  width: 10%
+
+.clients-passport,
+.managers-passport,
+.tourist-passport
+  width: 15%
+
+.tours-name
+  width: 20%
+
+.tours-location
+  width: 17%
+
+.tours-start-date
+  width: 10%
+
+.tours-end-date
+  width: 10%
+
+.tours-manager
+  width: 15%
+
+.tours-transport-type
+  width: 15%
+
+.tours-seats
+  width: 6%
+
+.tours-tourists
+  width: 7%

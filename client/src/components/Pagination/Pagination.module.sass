@@ -1,0 +1,31 @@
+@import '../../variables'
+
+.paginationw
+  width: 72px
+  height: 36px
+  @include flex-center
+
+.previous
+  transform: rotate(180deg)
+
+.next,
+.previous
+  width: 36px
+  height: 36px
+  @include flex-center
+  border-radius: 4px
+  cursor: pointer
+  background-color: $content-bgd
+  transition: background-color .3s ease
+
+  svg
+    path 
+      fill: $active-menu-bgd
+      transition: fill .3s ease
+
+  &:hover
+    background-color: $select-bgd-hover
+
+    svg
+      path 
+        fill: $primary-color

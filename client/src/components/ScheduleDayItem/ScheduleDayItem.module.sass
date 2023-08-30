@@ -1,0 +1,48 @@
+@import '../../variables'
+
+.day
+  width: calc(100% / 7)
+  height: auto
+  margin-top: 20px
+  @include flex-start-center
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6),
+  &:nth-child(7)
+    margin-top: 0
+
+.month-date
+  width: 100%
+  @include flex-start-center
+
+.month-date-button
+  width: 46px
+  height: 46px
+  border-radius: 50%
+  background-color: $content-bgd
+  margin-bottom: 10px
+  transition: background-color .3s ease
+  @include montserrat-normal(20px, 24px, $primary-text-color-dark)
+  @include flex-center
+
+.month-date-button-today
+  background-color: $active-menu-bgd
+  @include montserrat-normal(20px, 24px, $primary-text-color-light)
+  @include flex-center
+
+.events-list
+  width: 100%
+
+.event-holiday
+  width: calc( 100% - 6px )
+  margin: 2px 3px 0px 3px
+  border: 1px solid $holiday-color
+  padding: 3px 4px
+  border-radius: 4px
+  text-align: center
+  @include ellipsis-text
+  @include montserrat-normal(13px, 17px, $holiday-color)

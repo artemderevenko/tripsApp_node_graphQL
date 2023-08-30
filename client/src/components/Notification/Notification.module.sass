@@ -1,0 +1,25 @@
+@import '../../variables'
+  
+.notification
+  position: fixed,
+  top: 20px
+  right: 20px
+  z-index: 999
+  width: 350px
+  height: auto
+  padding: 15px 20px
+  background-color: $success-color
+  border-radius: 4px
+  transition: opacity .3s linear
+  @include flex-start
+  @include blink-fade()
+  @include montserrat-normal(14px, 18px, $primary-text-color-light)
+
+.error
+  background-color: $error-color
+
+.warning
+  background-color: $warning-color
+
+.success
+  background-color: $success-color

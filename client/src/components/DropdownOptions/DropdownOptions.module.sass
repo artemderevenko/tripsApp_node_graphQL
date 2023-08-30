@@ -1,0 +1,56 @@
+@import '../../variables'
+  
+.dropdown-menu
+  position: absolute
+  min-width: 100%
+  max-width: 750px
+  top: calc(100% + 5px)
+  border: 1px solid $primary-border-color
+  border-radius: 4px
+  background-color: #FFFFFF
+  box-shadow: $primary-box-shadow
+  max-height: 320px
+  overflow: auto
+  z-index: 99
+
+.right
+  right: 0
+
+.left
+  left: 0
+
+.dropdown-menu-item
+  min-width: 100%
+  min-height: 30px
+  cursor: pointer
+  padding: 0 10px
+  transition: background-color .3s ease
+  white-space: nowrap
+  @include flex-center-start
+
+  &:hover
+    background-color: $select-bgd-hover
+
+  &:first-child
+    border-radius: 4px 4px 0 0
+
+  &:last-child
+    border-radius: 0 0 4px 4px
+
+.value
+  width: 100%
+  @include ellipsis-text
+  @include montserrat-normal(13px, 15px, $primary-text-color-dark)
+
+.no-result
+  min-width: 100%
+  min-height: 30px
+  cursor: pointer
+  padding: 0 10px
+  cursor: default
+  white-space: nowrap
+  @include flex-center-start
+  @include montserrat-normal(13px, 16px, $text-disable-color)
+
+.is-selected
+  background-color: $select-bgd-hover

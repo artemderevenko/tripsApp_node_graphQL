@@ -1,0 +1,72 @@
+@import '../../variables'
+  
+.options-wrap
+  position: absolute
+  z-index: 2
+  right: 0
+  top: 50%
+  color: red
+  opacity: 0
+  pointer-events: none
+  transition: opacity .2s linear
+  transform: translateY(-50%)
+
+.visible 
+  opacity: 1
+  pointer-events: all
+
+.options-icon
+  padding: 5px 10px
+  cursor: pointer
+  @include flex-center
+
+  svg 
+    path
+      fill: $table-header-color
+      transition: fill .2s linear
+
+  &:hover
+    svg 
+      path
+        fill: $primary-color
+
+.options-list
+  position: absolute
+  right: 20px
+  top: 2px
+  border: 1px solid $primary-border-color
+  border-radius: 4px
+  background-color: #FFFFFF
+  box-shadow: $primary-box-shadow
+  z-index: 99
+  opacity: 0
+  pointer-events: none
+  transition: opacity .2s linear
+
+.options-list-visible
+  opacity: 1
+  pointer-events: all
+
+.options-list-item
+  min-width: 100px
+  max-width: 300px
+  min-height: 30px
+  cursor: pointer
+  padding: 0 10px
+  transition: background-color .3s ease
+  text-decoration: none
+  @include ellipsis-text
+  @include flex-center-start
+  @include montserrat-normal(13px, 15px, $primary-text-color-dark)
+
+  &:hover
+    background-color: $select-bgd-hover
+
+  &:first-child
+    border-radius: 4px 4px 0 0
+
+  &:last-child
+    border-radius: 0 0 4px 4px
+
+.delete 
+  color: $error-color

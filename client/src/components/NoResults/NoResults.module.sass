@@ -1,0 +1,29 @@
+@import '../../variables'
+  
+.no-results-wrap
+  width: 100%
+  height: 300px
+  padding: 30px
+  @include flex-center
+
+.no-results
+  width: 500px
+  height: auto
+  @include flex-center
+
+.icon
+  width: 100%
+  @include flex-center
+
+  svg 
+    width: 60px
+
+    path 
+      fill: $active-menu-bgd
+
+.text
+  width: 100%
+  margin-top: 30px
+  text-align: center
+  @include flex-center
+  @include montserrat-normal(18px, 32px, $primary-text-color-dark)

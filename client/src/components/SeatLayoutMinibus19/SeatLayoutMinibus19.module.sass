@@ -1,0 +1,82 @@
+@import '../../variables'
+
+.minibus-19
+  width: 1086px
+  height: 300px
+  background-image: url('/assets/images/mercedes-19.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: auto 100% 
+
+.fade
+  @include fade()
+
+.seats-wrap
+  height: 238px
+  width: 540px
+  margin: 31px 0 0 130px
+  position: relative
+
+.seat
+  position: absolute
+  width: 60px
+  height: 49px
+  @include flex-center
+
+.seat-1,
+.seat-4,
+.seat-7,
+.seat-10,
+.seat-13,
+.seat-16
+  top: 15px
+
+.seat-2,
+.seat-5,
+.seat-8,
+.seat-11,
+.seat-14,
+.seat-17
+  top: 68px
+
+.seat-18
+  top: 121px
+
+.seat-3,
+.seat-6,
+.seat-9,
+.seat-12,
+.seat-15,
+.seat-19
+  bottom: 15px
+
+.seat-1,
+.seat-2,
+.seat-3
+  right: 25px
+
+.seat-4,
+.seat-5,
+.seat-6
+  right: 110px
+
+.seat-7,
+.seat-8,
+.seat-9
+  right: 195px
+
+.seat-10,
+.seat-11,
+.seat-12
+  right: 280px
+
+.seat-13,
+.seat-14,
+.seat-15
+  right: 365px
+
+.seat-16,
+.seat-17,
+.seat-18,
+.seat-19
+  right: 450px

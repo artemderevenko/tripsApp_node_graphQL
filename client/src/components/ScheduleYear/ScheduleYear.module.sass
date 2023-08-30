@@ -1,0 +1,43 @@
+@import '../../variables'
+
+.schedule-year
+  width: 100%
+  height: auto
+  position: relative
+  user-select: none
+  border-top: 1px dashed $primary-border-color
+  padding-top: 20px
+  @include flex-center
+
+.schedule-year-wrap
+  width: 100%
+  height: 790px
+  position: relative
+  overflow: hidden
+  @include flex-start-center
+
+.schedule-year-content
+  max-width: 1180px
+  width: 100%
+  height: 790px
+  position: relative
+  @include flex-start-between
+
+.scroll-right
+  @include scrollRight()
+
+.scroll-left
+  @include scrollLeft()
+
+.fade
+  @include fade()
+
+.note
+  margin-bottom: 20px
+  @include flex-center-start
+  @include montserrat-normal(14px, 18px, $primary-text-color-dark)
+
+.note-icon
+  height: 18px
+  width: auto
+  margin-right: 6px

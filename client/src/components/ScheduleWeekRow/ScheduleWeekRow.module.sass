@@ -1,0 +1,41 @@
+@import '../../variables'
+
+.schedule-week-content
+  width: 100%
+  height: auto
+  position: relative
+  @include flex-start-between
+
+.scroll-right
+  @include scrollRight()
+
+.scroll-left
+  @include scrollLeft()
+
+.fade
+  @include fade()
+
+.tour-schedule
+  width: 100%
+  @include flex-start
+
+.tour-schedule-item
+  margin: 4px 4px 0px 4px
+  background-color: $tour-schedule-bgd
+  padding: 3px 4px
+  border-radius: 4px
+  text-decoration: none
+  text-align: center
+  opacity: .8
+  transition: opacity .3s ease
+  @include ellipsis-text
+  @include montserrat-normal(13px, 17px, $primary-text-color-light)
+
+  &:hover
+    opacity: 1
+
+.grid-item 
+  margin-bottom: 50px
+
+  &:last-child
+    margin-bottom: 0

@@ -1,0 +1,1 @@
+export { TourSeatLayout } from './TourSeatLayout';

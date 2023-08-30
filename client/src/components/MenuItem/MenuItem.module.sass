@@ -1,0 +1,31 @@
+@import '../../variables'
+
+.menu-item
+  width: 100%
+  margin-top: 20px
+  @include flex-start-center
+
+  &:first-child
+    margin-top: 0
+
+  svg
+    path
+      fill: $primary-text-color-light
+
+.menu-link
+  text-decoration: none
+  opacity: .8
+  width: 70px
+  height: 54px
+  border-radius: 4px
+  background-color: $primary-color
+  transition: opacity .3s ease, background-color .3s ease
+  @include flex-center
+
+  &:hover
+    opacity: 1
+    background-color: $active-menu-bgd
+
+.active-menu-link
+  opacity: 1
+  background-color: $active-menu-bgd

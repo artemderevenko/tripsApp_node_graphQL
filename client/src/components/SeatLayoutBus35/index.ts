@@ -1,0 +1,1 @@
+export { SeatLayoutBus35 } from './SeatLayoutBus35';
